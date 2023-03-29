@@ -1,0 +1,43 @@
+.app {
+
+  body {
+    font-family: "Raleway";    
+  }
+
+  .link {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;    
+  }    
+
+  .link1 {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;    
+  }   
+  
+ }
+
+ @media only screen and (max-width: 600px) {
+    .app{
+      width:100vw;
+      overflow: hidden;
+
+      .link1{           
+        font-size: 30px;    
+      }
+      .example::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+  
+}
+
+ 
+
+

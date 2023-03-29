@@ -1,0 +1,259 @@
+.products {
+    padding: 2% 4%;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+  
+    .left {
+      display: grid;
+      flex: 1;
+      position: relative;
+      height: 100%;
+      top: 0;
+      margin-right:2%;
+  
+      .filterItem{
+        flex: 1;
+        font-size: 14px;
+        margin-bottom: 30px;
+  
+        h3{
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+  
+        .inputItem{
+          margin-bottom: 10px;
+          label{
+            margin-left: 5px;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .filterItem2{
+        flex: 2;
+        font-size: 14px;
+        margin-bottom: 30px;
+  
+        h3{
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+  
+        .inputItem{
+          margin-bottom: 10px;
+          label{
+            margin-left: 5px;
+            font-size: 14px;
+          }
+        }
+      }
+      .filterItem3{
+        flex: 3;
+        font-size: 14px;
+        margin-bottom: 30px;
+  
+        h3{
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+  
+        .inputItem{
+          margin-bottom: 10px;
+          label{
+            margin-left: 5px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    
+    .right {
+      flex: 3;
+      position: relative;       
+  
+      .catImg{
+        display: block;
+        width: 100%;
+        height: 300px;
+        object-position: 68% 32%; 
+        object-fit: cover;
+        margin-bottom: 50px;
+        opacity: 85%;
+        
+      }
+
+      .centered{
+        display:flex;
+        position: absolute;
+        top:0;
+        right:0;
+        font-size: 28px;
+        font-weight: 800;
+        color:gray;
+
+        //min-width: 250px;
+        //width: fit-content;
+        height: 40px;
+        padding: 0.5% 1.5% 0 1.5%;
+        border: none;
+        background-color: white;
+        text-transform: uppercase;
+        opacity: 90%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .products {
+
+      .right {
+        flex: 3;
+        position: relative;
+    
+        .catImg{
+          display: block;
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          margin-bottom: 50px;
+          opacity: 85%;
+          
+        }
+  
+        .centered{
+          display:flex;
+          position: absolute;
+          top:0;
+          right:0;
+          font-size: 25px;
+          font-weight: 800;
+          color:gray;
+  
+          //min-width: 210px;
+          //width: fit-content;
+          height: 40px;
+          padding: 1% 1% 0 2%;
+          border: none;
+          background-color: white;
+          text-transform: uppercase;
+          opacity: 80%;
+        }
+      }
+
+    }
+  }  
+
+  @media only screen and (max-width: 600px) {
+    .products {
+  
+      .example::-webkit-scrollbar {
+        display: none;
+      }
+      
+      display:grid;
+      padding: 1% 1% 0 0;
+      font-size: 14px;
+      overflow: hidden;
+
+      .left {
+        display: flex;
+        flex: 1;
+        position: relative;
+        height: 100%;
+        top: 0;
+        gap: 6%;
+    
+        .filterItem{
+          flex: 1;
+          font-size: 14px;
+          margin-bottom: 30px;
+    
+          h3{
+            font-weight: 600;
+            margin-bottom: 20px;
+          }
+    
+          .inputItem{
+            margin-bottom: 10px;
+            label{
+              margin-left: 5px;
+              font-size: 14px;
+            }
+          }
+        }
+  
+        .filterItem2{
+          flex: 2;
+          font-size: 14px;
+          margin-bottom: 30px;
+    
+          h3{
+            font-weight: 600;
+            margin-bottom: 20px;
+          }
+    
+          .inputItem{
+            margin-bottom: 10px;
+            label{
+              margin-left: 5px;
+              font-size: 14px;
+            }
+          }
+        }
+        .filterItem3{
+          flex: 3;
+          font-size: 14px;
+          margin-bottom: 30px;
+    
+          h3{
+            font-weight: 600;
+            margin-bottom: 20px;
+          }
+    
+          .inputItem{
+            margin-bottom: 10px;
+            label{
+              margin-left: 5px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .right {
+        flex: 3;
+        position: relative;
+    
+        .catImg{
+          display: block;
+          width: 100%;
+          min-width: 300px;
+          object-fit: cover;
+          margin-bottom: 50px;
+        }
+
+        .centered{
+          display:flex;
+          position: absolute;
+          top:0;
+          right:0;
+          font-size: 22px;
+          font-weight: 800;
+          color:gray;
+  
+          //min-width: 210px;
+          //width: fit-content;
+          height: 35px;
+          padding: 2% 5% 0 2%;
+          border: none;
+          background-color: white;
+          text-transform: uppercase;
+          opacity: 80%;
+        }
+      }
+
+    }
+  }
